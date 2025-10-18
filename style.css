@@ -1,0 +1,15 @@
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;padding:20px;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f6f7fb;color:#222;text-align:center}
+h1{margin:0 0 12px;font-weight:700;color:#334}
+#gameContainer{display:inline-block;position:relative;border:2px solid #9aa3b2;background:#fff;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+canvas{display:block;border-radius:6px}
+#overlay{position:absolute;inset:0;display:grid;place-items:center;font-size:22px;font-weight:700;color:#fff;pointer-events:none;opacity:0;transition:opacity .25s ease}
+#overlay.show{opacity:1;background:rgba(0,0,0,.35)}
+#hud{margin:12px auto 0;display:flex;gap:14px;justify-content:center;align-items:center}
+#hud span{padding:6px 10px;background:#e9eef6;border-radius:6px;font-weight:600}
+#restartBtn{padding:8px 14px;border:0;border-radius:6px;cursor:pointer;background:#0d6efd;color:#fff;font-weight:700;transition:transform .05s ease,background .2s ease}
+#restartBtn:active{transform:translateY(1px)}
+#restartBtn:hover{background:#0b5ed7}
+.hint{margin:10px 0 0;color:#556;font-size:14px}
+@media (max-width:560px){#gameContainer,canvas{width:340px;height:408px}}
