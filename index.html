@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sammle die Sterne!</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="gameRoot">
+      <h1>Sammle die Sterne!</h1>
+      <div id="gameContainer">
+        <canvas id="gameCanvas" width="500" height="600" aria-label="Spielfeld"></canvas>
+        <div id="overlay" aria-live="polite"></div>
+      </div>
+
+      <div id="hud">
+        <span id="score">Punkte: 0</span>
+        <span id="time">Zeit: 30.0 s</span>
+        <button id="restartBtn" type="button">Neu starten</button>
+      </div>
+
+      <p class="hint">
+        Steuern: ←/→ oder A/D. Mit Maus/Touch den Korb ziehen.
+      </p>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
